@@ -1,10 +1,10 @@
-.master{
+.master {
   display: flex;
   flex-direction: column;
 }
 
 /*       Section     1                              */
-.section1{
+.section1 {
   display: flex;
   flex-direction: row;
   padding-top: 2rem;
@@ -12,15 +12,7 @@
   align-items: center;
   height: 25rem;
   width: 100%;
-  background-color: #7D0A0A;;
-}
-
-.imgSection1{
-  width: 40%;
-}
-
-.imgSection1 img{
-  width: 40rem;
+  background-color: #7d0a0a;
 }
 
 .fraseSection1 {
@@ -36,15 +28,14 @@
   font-size: 2.5rem;
   line-height: 1.4;
   font-weight: 700;
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 
 .fraseSection1 h1 span {
   display: block;
-  color: #EAD196;
+  color: #ead196;
   font-style: italic;
 }
-
 
 /*---------------------Section--------2------------------------*/
 
@@ -53,7 +44,7 @@
   margin: 1.5rem;
   margin-top: 8rem;
   padding: 1rem;
-  background-color: #EAD196;
+  background-color: #ead196;
   border-radius: 2rem;
   box-shadow: 0 0 15px rgba(125, 10, 10, 0.1);
 }
@@ -65,24 +56,24 @@
 }
 
 .infoSection2 {
-  background-color: #EAD196;
-  color: #7D0A0A;
+  background-color: #ead196;
+  color: #7d0a0a;
   padding: 1rem;
   max-width: 900px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .infoSection2 h2 {
   font-size: 2rem;
   margin-bottom: 1.2rem;
-  color: #7D0A0A;
+  color: #7d0a0a;
   text-align: center;
 }
 
 .infoSection2 p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: #7D0A0A;
+  color: #7d0a0a;
 }
 
 .infoSection2 ul {
@@ -97,7 +88,7 @@
 }
 
 .infoSection2 li::before {
-  color: #7D0A0A;
+  color: #7d0a0a;
   position: absolute;
   left: 0;
   font-weight: bold;
@@ -128,21 +119,39 @@
   filter: grayscale(100%);
 }
 
-.textContainerSection3{
-  background-color: #7D0A0A;
+.textContainerSection3 {
+  background-color: #7d0a0a;
   position: absolute;
   bottom: 20px;
   padding: 1rem;
-  color: #EEEEEE;
+  color: #eeeeee;
   font-weight: bold;
   border-radius: 2rem;
   box-shadow: 0 0 15px rgba(125, 10, 10, 0.1);
 }
 
-.asesoria{
+.asesoria {
   left: 220px;
 }
 
-.notarial{
+.notarial {
   right: 220px;
 }
+
+/* --------------------responsiveness------------------- */
+
+/* 900 max tablet */
+@media (max-width: 900px) {
+  /*       Section     1   */
+
+  .section1 {
+    padding-top: 0;
+  }
+
+  .fraseSection1 {
+    padding: ;
+    width: 90%;
+  }
+}
+
+/* 375 px max Mobile */
