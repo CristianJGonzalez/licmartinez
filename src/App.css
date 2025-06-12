@@ -329,6 +329,61 @@
   .infoSection2 li {
     font-size: 1rem;
   }
+  /*---------- Section 3 */
+  .section3 {
+    flex-direction: column;
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  .foto1Section3,
+  .foto2Section3 {
+    width: 100%;
+    flex: none;
+    height: 300px;
+    position: relative;
+  }
+
+  .foto1Section3 img,
+  .foto2Section3 img {
+    height: 100%;
+  }
+
+  .textContainerSection3 {
+    position: absolute;
+    bottom: 15px;
+    left: 50% !important; /* override left/right */
+    right: auto !important;
+    transform: translateX(-50%);
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+  }
+  /*---------- Section 4 */
+  .section4 div {
+    margin: 3rem 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .section4 h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .section4 ul {
+    padding-left: 1rem;
+  }
+
+  .section4 li {
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+
+  .section4 li::before {
+    content: "•";
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
 }
 
 /* Móviles */

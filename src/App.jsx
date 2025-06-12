@@ -62,32 +62,32 @@ function App() {
                   <a>Servicios Notariales</a>
                 </div>
               </div>
-            </section>
+      </section>
         {/*------------------Fourth Section---------------------*/}
         <section className="section4" ref={section4Ref}>
-        {activeSection === 'asesoria' && (
-          <div className="asesoriaS4">
-            <h2>Tipos de asesorías:</h2>
-            <ul>
-              <li>Asesoría de divorcios</li>
-              <li>Asesoría ante la procu</li>
-              <li>Asesoría financiera/Forex</li>
-              <li>Asesoría pa no casarte</li>
-            </ul>
-          </div>
-        )}
-        {activeSection === 'notarial' && (
-          <div className="notarialS4">
-            <h2>Servicios notariales como:</h2>
-            <ul>
-              <li>Escrituras públicas</li>
-              <li>Poderes notariales</li>
-              <li>Testamentos</li>
-              <li>Contratos certificados</li>
-            </ul>
-          </div>
-        )}
-      </section>
+          {activeSection === 'asesoria' && (
+            <div className="asesoriaS4">
+              <h2>Tipos de asesorías:</h2>
+              <ul>
+                <li>Asesoría de divorcios</li>
+                <li>Asesoría ante la procu</li>
+                <li>Asesoría financiera/Forex</li>
+                <li>Asesoría pa no casarte</li>
+              </ul>
+            </div>
+          )}
+          {activeSection === 'notarial' && (
+            <div className="notarialS4">
+              <h2>Servicios notariales como:</h2>
+              <ul>
+                <li>Escrituras públicas</li>
+                <li>Poderes notariales</li>
+                <li>Testamentos</li>
+                <li>Contratos certificados</li>
+              </ul>
+            </div>
+          )}
+        </section>
       {/*------------------Fifth Section - Contactanos---------------------*/}
       <section className="section5">
         <div className="map-container">
