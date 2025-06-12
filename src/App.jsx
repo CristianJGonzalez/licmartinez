@@ -1,5 +1,6 @@
 import './App.css'
 import Nav from "./Components/Nav"
+import Footer from "./Components/Footer"
 import React, { useState, useRef, useEffect } from 'react';
 
 function App() {
@@ -87,7 +88,33 @@ function App() {
           </div>
         )}
       </section>
-      {/*------------------Fourth Section---------------------*/}
+      {/*------------------Fifth Section - Contactanos---------------------*/}
+      <section className="section5">
+        <div className="map-container">
+          <img src="/images/location.png" alt="Ubicación de la oficina" />
+        </div>
+
+        <div className="contact-info">
+          <h2>Contáctanos</h2>
+          <ul>
+            <li>
+              <i className="fas fa-envelope"></i>
+              marco.martinez.abogado@gmail.com
+            </li>
+            <li>
+              <i className="fas fa-phone-alt"></i>
+              +503 2222-1234
+            </li>
+            <li>
+              <i className="fab fa-whatsapp"></i>
+              <a href="https://wa.me/50377269737" target="_blank" rel="noopener noreferrer">
+                +503 7726-9737
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <Footer/>
   </div>
   )
 }

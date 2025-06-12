@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-/*       Section     1                              */
+/*       Section 1 - Hero       */
 .section1 {
   display: flex;
   flex-direction: row;
@@ -12,7 +12,7 @@
   align-items: center;
   height: 25rem;
   width: 100%;
-  background-color: #7d0a0a;
+  background-color: #1e3a8a;
 }
 
 .fraseSection1 {
@@ -28,36 +28,35 @@
   font-size: 2.5rem;
   line-height: 1.4;
   font-weight: 700;
-  color: #eeeeee;
+  color: #f1f5f9;
 }
 
 .fraseSection1 h1 span {
   display: block;
-  color: #ead196;
+  color: #3b82f6;
   font-style: italic;
 }
 
-/*---------------------Section--------2------------------------*/
-
+/*       Section 2 - Información Personal       */
 .section2 {
   display: flex;
   margin: 1.5rem;
   margin-top: 8rem;
   padding: 1rem;
-  background-color: #ead196;
+  background-color: #f1f5f9;
   border-radius: 2rem;
-  box-shadow: 0 0 15px rgba(125, 10, 10, 0.1);
+  box-shadow: 0 0 20px rgba(30, 58, 138, 0.1);
 }
 
 .section2 img {
   border-radius: 2rem;
   max-width: 500px;
-  box-shadow: 0 0 15px rgba(125, 10, 10, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
 }
 
 .infoSection2 {
-  background-color: #ead196;
-  color: #7d0a0a;
+  background-color: #f1f5f9;
+  color: #1e3a8a;
   padding: 1rem;
   max-width: 900px;
   font-family: "Poppins", sans-serif;
@@ -66,17 +65,18 @@
 .infoSection2 h2 {
   font-size: 2rem;
   margin-bottom: 1.2rem;
-  color: #7d0a0a;
+  color: #1e3a8a;
   text-align: center;
 }
 
 .infoSection2 p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: #7d0a0a;
+  color: #0f172a;
 }
 
 .infoSection2 ul {
+  list-style: none;
   padding-left: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -85,16 +85,18 @@
   margin-bottom: 0.6rem;
   position: relative;
   padding-left: 1.2rem;
+  color: #0f172a;
 }
 
 .infoSection2 li::before {
-  color: #7d0a0a;
+  content: "•";
+  color: #3b82f6;
   position: absolute;
   left: 0;
   font-weight: bold;
 }
 
-/*---------------------Section--------3------------------------*/
+/*       Section 3 - Servicios Destacados       */
 .section3 {
   display: flex;
   width: 100%;
@@ -116,18 +118,25 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: grayscale(100%);
+  filter: grayscale(0%) brightness(0.95);
+  transition: filter 0.3s ease;
+}
+
+.foto1Section3:hover img,
+.foto2Section3:hover img {
+  filter: grayscale(0%) brightness(1.05);
 }
 
 .textContainerSection3 {
-  background-color: #7d0a0a;
+  background-color: #3b82f6;
   position: absolute;
   bottom: 20px;
-  padding: 1rem;
-  color: #eeeeee;
+  padding: 1rem 2rem;
+  color: #ffffff;
   font-weight: bold;
+  font-size: 1.2rem;
   border-radius: 2rem;
-  box-shadow: 0 0 15px rgba(125, 10, 10, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .asesoria {
@@ -138,7 +147,7 @@
   right: 220px;
 }
 
-/*---------------------Section--------4------------------------*/
+/*       Section 4 - Contenido Expandido       */
 .section4 div {
   display: flex;
   flex-direction: column;
@@ -148,12 +157,101 @@
   margin-bottom: 7rem;
 }
 
-/* --------------------responsiveness------------------- */
+.section4 h2 {
+  font-size: 1.8rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
 
-/* 900 max tablet */
+.section4 ul {
+  list-style: none;
+  padding: 0;
+  color: #0f172a;
+}
+
+.section4 li {
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.section4 li::before {
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
+}
+
+
+/* -------------------- Section 5 ------------------- */
+.section5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 4rem 2rem;
+  background-color: #f1f5f9;
+  gap: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.map-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.map-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: #1e3a8a;
+  color: #f1f5f9;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #3b82f6;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.contact-info a {
+  color: #f1f5f9;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #3b82f6;
+}
+
+/* -------------------- Responsiveness ------------------- */
+
+/* Tablets */
 @media (max-width: 900px) {
-  /*       Section     1   */
-
   .section1 {
     padding-top: 0;
   }
@@ -162,6 +260,56 @@
     padding: 0;
     width: 90%;
   }
+
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section2 img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .infoSection2 {
+    text-align: center;
+  }
+
+  .section3 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .foto1Section3,
+  .foto2Section3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .asesoria,
+  .notarial {
+    position: static;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .textContainerSection3 {
+    position: relative;
+  }
 }
 
-/* 375 px max Mobile */
+/* Móviles */
+@media (max-width: 480px) {
+  .fraseSection1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .infoSection2 h2 {
+    font-size: 1.5rem;
+  }
+
+  .section4 h2 {
+    font-size: 1.5rem;
+  }
+}
