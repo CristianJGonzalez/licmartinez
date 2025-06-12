@@ -74,6 +74,11 @@
   width: 100%;
 }
 
+/* 🔹 Desktop: ocultar botón hamburguesa */
+.menu-toggle {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
@@ -120,7 +125,3 @@
   }
 }
 
-/* 🔹 Desktop: ocultar botón hamburguesa */
-.menu-toggle {
-  display: none;
-}
