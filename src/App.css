@@ -1,6 +1,7 @@
 .master {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 /*       Section 1 - Hero       */
@@ -384,6 +385,28 @@
     font-weight: bold;
     font-size: 1.2rem;
   }
+
+  /*---------- Section 5 */
+  .section5 {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .map-container,
+  .contact-info {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .contact-info {
+    padding: 1.5rem;
+  }
+
+  .contact-info li {
+    font-size: 1rem;
+    word-break: break-word; /* 🔥 Evita desbordes largos como el correo */
+    overflow-wrap: break-word;
+  }
 }
 
 /* Móviles */
@@ -399,4 +422,6 @@
   .section4 h2 {
     font-size: 1.5rem;
   }
+
+  
 }
