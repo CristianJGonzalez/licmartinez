@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 
 function Nav() {
@@ -6,27 +7,39 @@ function Nav() {
 
   return (
     <div className="nav">
-      {/* 🔹 Contenedor del logo + botón toggle */}
+      {/* 🔹 Logo + Toggle button */}
       <div className="nav-top">
         <div className="logoContainer">
-          <a href="#">Marco Martinez</a>
+          <Link to="/">Marco Martinez</Link>
         </div>
 
         <button
           className="menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Abrir menú"
+          aria-label="Open menu"
         >
           ☰
         </button>
       </div>
 
-      {/* 🔹 Menú de navegación */}
+      {/* 🔹 Navigation menu */}
       <div className={`navOptions ${menuOpen ? "active" : ""}`}>
         <ul>
-          <li>Acerca de mí</li>
-          <li>Servicios</li>
-          <li>Contáctanos</li>
+          <li>
+            <Link to="/acerca" onClick={() => setMenuOpen(false)}>
+              Acerca de mí
+            </Link>
+          </li>
+          <li>
+            <Link to="/servicios" onClick={() => setMenuOpen(false)}>
+              Servicios
+            </Link>
+          </li>
+          <li>
+            <Link to="/contacto" onClick={() => setMenuOpen(false)}>
+              Contáctanos
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
