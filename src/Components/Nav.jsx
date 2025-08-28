@@ -12,7 +12,7 @@ function Nav() {
         <div className="logoContainer">
           <Link to="/">
             <img
-              src="../public/images/Lic.Martinez-Logo-Website.png"
+              src="/images/Lic.Martinez-Logo-Website.png"
               alt="Lic.MarcoLogo"
             />
           </Link>
