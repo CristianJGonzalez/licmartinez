@@ -5,10 +5,10 @@ import React, { useState, useRef, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import serviceData from "./Components/serviceData";
 
-// import the new pages
-import About from "./Pages/About";
+// importing secondary pages: Acerca de mi, Servicios y contáctanos
+import AboutPage from "./Pages/AboutPage";
 import ServicesPage from "./Pages/ServicesPage";
-import Contact from "./Pages/Contact";
+import ContactPage from "./Pages/ContactPage";
 
 function App() {
   const [activeSection, setActiveSection] = useState(null);
@@ -55,7 +55,7 @@ function App() {
                       y personalizadas a cada uno de mis clientes.
                     </p>
 
-                    <p>Especialidades:</p>
+                    <h3>Especialidades</h3>
                     <ul>
                       <li>Derecho civil</li>
                       <li>Derecho penal</li>
@@ -156,12 +156,12 @@ function App() {
           />
 
           {/* ---------- NEW PAGES ---------- */}
-          <Route path="/acerca" element={<About />} />
+          <Route path="/acerca" element={<AboutPage />} />
           <Route
             path="/servicios"
             element={<ServicesPage services={serviceData} />}
           />
-          <Route path="/contacto" element={<Contact />} />
+          <Route path="/contacto" element={<ContactPage />} />
         </Routes>
 
         {/* Footer */}

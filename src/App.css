@@ -13,7 +13,7 @@
   align-items: center;
   height: 25rem;
   width: 100%;
-  background-color: #1e3a8a;
+  background-color: #91191e;
 }
 
 .fraseSection1 {
@@ -34,7 +34,7 @@
 
 .fraseSection1 h1 span {
   display: block;
-  color: #3b82f6;
+  color: #c6a15b;
   font-style: italic;
 }
 
@@ -56,17 +56,21 @@
 }
 
 .infoSection2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #f1f5f9;
-  color: #1e3a8a;
+  color: #91191e;
   padding: 1rem;
   max-width: 900px;
   font-family: "Poppins", sans-serif;
 }
 
-.infoSection2 h2 {
+.infoSection2 h2 h3 {
   font-size: 2rem;
   margin-bottom: 1.2rem;
-  color: #1e3a8a;
+  color: #91191e;
   text-align: center;
 }
 
@@ -91,7 +95,7 @@
 
 .infoSection2 li::before {
   content: "•";
-  color: #3b82f6;
+  color: #c6a15b;
   position: absolute;
   left: 0;
   font-weight: bold;
@@ -129,7 +133,7 @@
 }
 
 .textContainerSection3 {
-  background-color: #3b82f6;
+  background-color: #c6a15b;
   position: absolute;
   bottom: 20px;
   padding: 1rem 2rem;
@@ -212,7 +216,7 @@
   flex: 1;
   min-width: 300px;
   max-width: 500px;
-  background-color: #1e3a8a;
+  background-color: #91191e;
   color: #f1f5f9;
   padding: 2rem;
   border-radius: 1rem;

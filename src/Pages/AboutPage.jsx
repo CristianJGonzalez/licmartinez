@@ -1,6 +1,6 @@
 import React from "react";
 
-function About() {
+function AboutPage() {
   return (
     <div className="page about">
       <h1> Acerca de mí</h1>
@@ -30,4 +30,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutPage;

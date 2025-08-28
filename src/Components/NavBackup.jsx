@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./Nav.css";
 
-function Nav() {
+// pls note this is intentionally named "NavBackup" in case we required a sense of guidance from this old design pattern
+function NavBackup() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (

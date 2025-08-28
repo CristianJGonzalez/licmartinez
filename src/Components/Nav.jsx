@@ -10,7 +10,12 @@ function Nav() {
       {/* 🔹 Logo + Toggle button */}
       <div className="nav-top">
         <div className="logoContainer">
-          <Link to="/">Marco Martinez</Link>
+          <Link to="/">
+            <img
+              src="../public/images/Lic.Martinez-Logo-Website.png"
+              alt="Lic.MarcoLogo"
+            />
+          </Link>
         </div>
 
         <button
@@ -22,23 +27,29 @@ function Nav() {
         </button>
       </div>
 
+      <div className="nav-flags">
+        <img
+          src="../public/images/elsalvador.png"
+          alt="elsalvador-Lic.MarcoMartinez-servicios"
+        />
+
+        <img
+          src="../public/images/estadosunidos.png"
+          alt="estadosunidos-Lic.MarcoMartinez-servicios"
+        />
+      </div>
+
       {/* 🔹 Navigation menu */}
       <div className={`navOptions ${menuOpen ? "active" : ""}`}>
         <ul>
           <li>
-            <Link to="/acerca" onClick={() => setMenuOpen(false)}>
-              Acerca de mí
-            </Link>
+            <Link to="/acerca">Acerca de mí</Link>
           </li>
           <li>
-            <Link to="/servicios" onClick={() => setMenuOpen(false)}>
-              Servicios
-            </Link>
+            <Link to="/servicios">Servicios</Link>
           </li>
           <li>
-            <Link to="/contacto" onClick={() => setMenuOpen(false)}>
-              Contáctanos
-            </Link>
+            <Link to="/contacto">Contáctanos</Link>
           </li>
         </ul>
       </div>

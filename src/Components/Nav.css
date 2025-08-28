@@ -4,9 +4,9 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  background-color: #1e3a8a;
+  background-color: #91191e;
   color: #f1f5f9;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   padding: 1rem 2rem;
@@ -20,35 +20,49 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  flex-basis: 33.33%;
 }
 
-/* Logo */
-.logoContainer a {
-  font-weight: 700;
-  font-size: 1.6rem;
-  text-decoration: none;
-  color: #f1f5f9;
-  letter-spacing: 1px;
-  transition: color 0.3s ease;
+/* Logo image*/
+/* Pls note: We removed that class targetting the text "Marco Martinez" Cris had set up before inserting the logo */
+.logoContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
-.logoContainer a:hover {
-  color: #3b82f6;
+.logoContainer img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+/* Flag container */
+
+.nav-flags {
+  display: inline-flex;
+  justify-content: center;
+  flex-basis: 33.33%;
 }
 
-/* Opciones del menú */
+.nav-flags img {
+  height: 100%;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* NAVIGATION OPTIONS STYLES*/
 .navOptions ul {
   display: flex;
   gap: 2rem;
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   flex-wrap: nowrap;
-  white-space: nowrap; 
+  white-space: nowrap;
+  flex-basis: 33.34%;
 }
 
-.navOptions li {
+.navOptions li a {
   cursor: pointer;
   font-weight: 500;
   position: relative;
@@ -57,20 +71,20 @@
   transition: color 0.3s ease;
 }
 
-.navOptions li::before {
+.navOptions li a::before {
   content: "•";
   position: absolute;
   left: 0;
-  color: #3b82f6;
+  color: #c6a15b;
   font-weight: bold;
   top: 0;
 }
 
-.navOptions li::after {
-  content: '';
+.navOptions li a::after {
+  content: "";
   display: block;
   height: 2px;
-  background: #3b82f6;
+  background: #c6a15b;
   transition: width 0.3s ease;
   width: 0%;
   position: absolute;
@@ -78,11 +92,11 @@
   left: 0;
 }
 
-.navOptions li:hover {
-  color: #3b82f6;
+.navOptions li a:hover {
+  color: #c6a15b;
 }
 
-.navOptions li:hover::after {
+.navOptions li a:hover::after {
   width: 100%;
 }
 
@@ -95,8 +109,13 @@
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
+    justify-content: space-between;
     align-items: stretch;
     padding: 1rem;
+  }
+
+  .nav-flags {
+    display: none;
   }
 
   .navOptions {
