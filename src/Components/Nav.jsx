@@ -11,7 +11,7 @@ function Nav() {
       <div className="nav-top">
         <div className="logoContainer">
           <Link to="/">
-            <img src="/images/lic-martinez-logo.png" alt="Lic.MarcoLogo" />
+            <img src="/images/lic-martinez-logo.png" alt="logo" />
           </Link>
         </div>
 
