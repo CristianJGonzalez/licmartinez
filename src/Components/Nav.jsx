@@ -29,12 +29,12 @@ function Nav() {
 
       <div className="nav-flags">
         <img
-          src="../public/images/elsalvador.png"
+          src="/images/elsalvador.png"
           alt="elsalvador-Lic.MarcoMartinez-servicios"
         />
 
         <img
-          src="../public/images/estadosunidos.png"
+          src="/images/estadosunidos.png"
           alt="estadosunidos-Lic.MarcoMartinez-servicios"
         />
       </div>
