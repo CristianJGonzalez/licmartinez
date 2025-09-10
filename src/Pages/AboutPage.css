@@ -1,12 +1,28 @@
+h1 {
+  display: block;
+  text-align: center;
+  color: #91191e;
+}
+
 .main-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 2rem;
-  background-color: #f1f5f9;
   width: 100%;
   height: auto;
 }
 
-h1 {
-  color: #91191e;
+.flex-container-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #f1f5f9;
+  width: 50%;
+}
+
+.flex-container-2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
