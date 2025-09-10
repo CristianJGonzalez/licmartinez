@@ -184,7 +184,7 @@
 .section4 li::before {
   position: absolute;
   left: 0;
-  color: #3b82f6;
+  color: #c6a15b;
 }
 
 /* -------------------- Section 5 ------------------- */
@@ -249,7 +249,7 @@
 }
 
 .contact-info a:hover {
-  color: #3b82f6;
+  color: #c6a15b;
 }
 
 /* -------------------- Responsiveness ------------------- */

@@ -1,0 +1,12 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  background-color: #f1f5f9;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: #91191e;
+}

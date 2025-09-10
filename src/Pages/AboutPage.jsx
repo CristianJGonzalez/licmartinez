@@ -1,8 +1,9 @@
 import React from "react";
+import "./AboutPage.css";
 
 function AboutPage() {
   return (
-    <div className="page about">
+    <div className="main-container">
       <h1> Acerca de mí</h1>
       <p>
         Soy el Lic. Marco Antonio Morales, abogado y notario en El Salvador con
@@ -26,6 +27,7 @@ function AboutPage() {
         consulta hoy mismo y contar con un aliado legal que proteja tus
         intereses en todo momento.
       </p>
+      <img src="/images/about-page.jpg" alt="aboutpage" />
     </div>
   );
 }
