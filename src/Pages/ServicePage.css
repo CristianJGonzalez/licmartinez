@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  background-color: #91191e;
+}
+
+h1 {
+  display: block;
+  font-size: 3rem;
+  text-align: center;
+  color: #d9d9d9;
+  margin-bottom: 4rem;
+}
+
+.main-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.card-flex-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  max-height: 250px;
+  gap: 3rem;
+  background-color: #d9d9d9;
+}
+
+.card-flex-container img {
+  max-width: 225px;
+  max-height: 150px;
+}
+
+.card-service-text-c {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  background-color: #f1f5f9;
+}
