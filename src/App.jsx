@@ -155,11 +155,12 @@ function App() {
             }
           />
 
-          {/* ---------- NEW PAGES ---------- */}
+          {/* ---------- Nav bar pages ---------- */}
           <Route path="/acerca" element={<AboutPage />} />
+
           <Route
             path="/servicios"
-            element={<ServicesPage services={serviceData} />}
+            element={<ServicesPage service={serviceData[0].name} />}
           />
           <Route path="/contacto" element={<ContactPage />} />
         </Routes>

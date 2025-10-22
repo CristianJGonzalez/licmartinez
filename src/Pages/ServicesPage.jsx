@@ -1,8 +1,8 @@
 import React from "react";
-import serviceData from "/Components/serviceData";
+import serviceData from "../Components/serviceData";
 import "./ServicePage.css";
 
-function ServicesPage(services) {
+function ServicesPage(props) {
   return (
     <div className="service-page-container">
       <h1>Servicios</h1>
@@ -12,7 +12,7 @@ function ServicesPage(services) {
         <div className="card-flex-container">
           <img src="/images/lic-martinez-logo.png" alt="logo" />
           <div className="card-service-text-c">
-            <h3 className="card-subheading">SERVICE 1</h3>
+            <h3 className="card-subheading">{props.service} </h3>
             <p className="card-service-p"> TESTING </p>
             <link rel="stylesheet" href="/contacto" className="href" />
           </div>
