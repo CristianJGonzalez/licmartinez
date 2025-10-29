@@ -10,19 +10,19 @@ function ServicesPage(props) {
       <div className="flex-container">
         {/* First card container */}
         <div className="card-flex-container">
-          <img src="/images/lic-martinez-logo.png" alt="logo" />
+          <img src={props.serviveImg} alt="logo" />
           <div className="card-service-text-c">
-            <h3 className="card-subheading">{props.service} </h3>
-            <p className="card-service-p"> TESTING </p>
+            <h3 className="card-subheading">{props.serviceName} </h3>
+            <p className="card-service-p"> {props.serviceDescription} </p>
             <link rel="stylesheet" href="/contacto" className="href" />
           </div>
         </div>
         {/* Second Card Container */}
         <div className="card-flex-container">
-          <img src="/images/lic-martinez-logo.png" alt="logo" />
+          <img src={props.serviveImg} alt="logo" />
           <div className="card-service-text-c">
-            <h3 className="card-subheading">SERVICE 1</h3>
-            <p className="card-service-p"> TESTING </p>
+            <h3 className="card-subheading">{props.serviceName} </h3>
+            <p className="card-service-p"> {props.serviceDescription} </p>
             <link rel="stylesheet" href="/contacto" className="href" />
           </div>
         </div>
@@ -32,19 +32,19 @@ function ServicesPage(props) {
       <div className="flex-container">
         {/* Third card container */}
         <div className="card-flex-container">
-          <img src="/images/lic-martinez-logo.png" alt="logo" />
+          <img src={props.serviveImg} alt="logo" />
           <div className="card-service-text-c">
-            <h3 className="card-subheading">SERVICE 1</h3>
-            <p className="card-service-p"> TESTING </p>
+            <h3 className="card-subheading">{props.serviceName} </h3>
+            <p className="card-service-p"> {props.serviceDescription}</p>
             <link rel="stylesheet" href="/contacto" className="href" />
           </div>
         </div>
         {/* Fourth Card Container */}
         <div className="card-flex-container">
-          <img src="/images/lic-martinez-logo.png" alt="logo" />
+          <img src={props.serviveImg} alt="logo" />
           <div className="card-service-text-c">
-            <h3 className="card-subheading">SERVICE 1</h3>
-            <p className="card-service-p"> text </p>
+            <h3 className="card-subheading">{props.serviceName} </h3>
+            <p className="card-service-p">{props.serviceDescription} </p>
             <link rel="stylesheet" href="/contacto" className="href" />
           </div>
         </div>
@@ -54,19 +54,19 @@ function ServicesPage(props) {
       <div className="flex-container">
         {/* Quinto card container */}
         <div className="card-flex-container">
-          <img src="/images/lic-martinez-logo.png" alt="logo" />
+          <img src={props.serviveImg} alt="logo" />
           <div className="card-service-text-c">
-            <h3 className="card-subheading">SERVICE 1</h3>
-            <p className="card-service-p"> TESTING </p>
+            <h3 className="card-subheading">{props.serviceName} </h3>
+            <p className="card-service-p"> {props.serviceDescription} </p>
             <link rel="stylesheet" href="/contacto" className="href" />
           </div>
         </div>
         {/* Sexto Card Container */}
         <div className="card-flex-container">
-          <img src="/images/lic-martinez-logo.png" alt="logo" />
+          <img src={props.serviveImg} alt="logo" />
           <div className="card-service-text-c">
-            <h3 className="card-subheading">SERVICE 1</h3>
-            <p className="card-service-p"> TESTING </p>
+            <h3 className="card-subheading">{props.serviceName} </h3>
+            <p className="card-service-p"> {props.serviceDescription}</p>
             <link rel="stylesheet" href="/contacto" className="href" />
           </div>
         </div>
@@ -76,19 +76,19 @@ function ServicesPage(props) {
       <div className="flex-container">
         {/* Setimo card container */}
         <div className="card-flex-container">
-          <img src="/images/lic-martinez-logo.png" alt="logo" />
+          <img src={props.serviveImg} alt="logo" />
           <div className="card-service-text-c">
-            <h3 className="card-subheading">SERVICE 1</h3>
-            <p className="card-service-p"> TESTING </p>
+            <h3 className="card-subheading">{props.serviceName} </h3>
+            <p className="card-service-p"> {props.serviceDescription}</p>
             <link rel="stylesheet" href="/contacto" className="href" />
           </div>
         </div>
         {/* Octavo Card Container */}
         <div className="card-flex-container">
-          <img src="/images/lic-martinez-logo.png" alt="logo" />
+          <img src={props.serviveImg} alt="logo" />
           <div className="card-service-text-c">
-            <h3 className="card-subheading">SERVICE 1</h3>
-            <p className="card-service-p"> TESTING </p>
+            <h3 className="card-subheading">{props.serviceName} </h3>
+            <p className="card-service-p"> {props.serviceDescription} </p>
             <link rel="stylesheet" href="/contacto" className="href" />
           </div>
         </div>
@@ -98,19 +98,19 @@ function ServicesPage(props) {
       <div className="flex-container">
         {/* Ninth card container */}
         <div className="card-flex-container">
-          <img src="/images/lic-martinez-logo.png" alt="logo" />
+          <img src={props.serviveImg} alt="logo" />
           <div className="card-service-text-c">
-            <h3 className="card-subheading">SERVICE 1</h3>
-            <p className="card-service-p"> TESTING </p>
+            <h3 className="card-subheading">{props.serviceName} </h3>
+            <p className="card-service-p"> {props.serviceDescription} </p>
             <link rel="stylesheet" href="/contacto" className="href" />
           </div>
         </div>
         {/* Tenth Container */}
         <div className="card-flex-container">
-          <img src="/images/lic-martinez-logo.png" alt="logo" />
+          <img src={props.serviveImg} alt="logo" />
           <div className="card-service-text-c">
-            <h3 className="card-subheading">SERVICE 1</h3>
-            <p className="card-service-p"> TESTING </p>
+            <h3 className="card-subheading">{props.serviceName} </h3>
+            <p className="card-service-p"> {props.serviceDescription} </p>
             <link rel="stylesheet" href="/contacto" className="href" />
           </div>
         </div>

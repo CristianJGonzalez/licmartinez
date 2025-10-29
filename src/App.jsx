@@ -160,7 +160,13 @@ function App() {
 
           <Route
             path="/servicios"
-            element={<ServicesPage service={serviceData[0].name} />}
+            element={
+              <ServicesPage
+                serviceImg={serviceData[0].img}
+                serviceName={serviceData[0].name}
+                serviceDescription={serviceData[0].description}
+              />
+            }
           />
           <Route path="/contacto" element={<ContactPage />} />
         </Routes>
