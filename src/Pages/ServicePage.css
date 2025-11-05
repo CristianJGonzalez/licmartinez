@@ -12,46 +12,74 @@ h1 {
 }
 
 .flex-container {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: 2rem;
   gap: 3rem;
-  height: 40vh;
+  height: auto;
   width: 100%;
 }
 
 .card-flex-container {
-  display: inline-flex;
-  width: 500px;
-  height: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 500px;
+  height: 275px;
   gap: 1rem;
   background-color: #d9d9d9;
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem auto;
 }
 
 .card-flex-container img {
-  flex: 0.75;
-  max-height: 160px;
+  flex-shrink: 0;
+  width: 225px;
+  height: 160px;
+  object-fit: cover;
 }
 
 .card-service-text-c {
-  flex: 1;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  flex: 1;
   background-color: #d9d9d9;
 }
 
 .card-service-text-c h3 {
   background-color: #d9d9d9;
   color: #000000;
-  text-align: center;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 .card-service-text-c p {
   background-color: #d9d9d9;
   color: #000000;
-  text-align: center;
+  text-align: left;
   font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* responsive design */
+
+@media (max-width: 600px) {
+  .card-flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-flex-container img {
+    max-width: 100%;
+  }
+
+  .card-service-text-c {
+    text-align: center;
+  }
 }

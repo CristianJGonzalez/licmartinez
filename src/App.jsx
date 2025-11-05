@@ -158,16 +158,8 @@ function App() {
           {/* ---------- Nav bar pages ---------- */}
           <Route path="/acerca" element={<AboutPage />} />
 
-          <Route
-            path="/servicios"
-            element={
-              <ServicesPage
-                serviceImg={serviceData[0].img}
-                serviceName={serviceData[0].name}
-                serviceDescription={serviceData[0].description}
-              />
-            }
-          />
+          <Route path="/servicios" element={<ServicesPage />} />
+
           <Route path="/contacto" element={<ContactPage />} />
         </Routes>
 
