@@ -5,7 +5,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import serviceData from "./Components/serviceData";
 
-// importing secondary pages: Acerca de mi, Servicios y contáctanos
+// importing secondary pages: "Acerca de mi", "Servicios" y "contáctanos"
 import AboutPage from "./Pages/AboutPage";
 import ServicesPage from "./Pages/ServicesPage";
 import ContactPage from "./Pages/ContactPage";

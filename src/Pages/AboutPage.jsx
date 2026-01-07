@@ -3,9 +3,9 @@ import "./AboutPage.css";
 
 function AboutPage() {
   return (
-    <div>
+    <div className="about-page">
       <h1> Acerca de mí</h1>
-      <div className="main-container">
+      <div className="about-page-main-container">
         <div className="flex-container-1">
           <p>
             Soy el Lic. Marco Antonio Morales, abogado y notario en El Salvador

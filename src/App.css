@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .master {
   display: flex;
   flex-direction: column;
@@ -64,7 +68,7 @@
   color: #91191e;
   padding: 1rem;
   max-width: 900px;
-  font-family: "Poppins", sans-serif;
+  font-family: "oppins", sans-serif;
 }
 
 .infoSection2 h2 h3 {
