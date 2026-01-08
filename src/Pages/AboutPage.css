@@ -3,7 +3,6 @@
   font-size: 3rem;
   text-align: center;
   color: #91191e;
-  margin-bottom: 4rem;
 }
 
 .about-page-main-container {
@@ -13,6 +12,7 @@
   gap: 3rem;
   width: 100%;
   height: auto;
+  margin-bottom: 4rem;
 }
 
 .flex-container-1 {
