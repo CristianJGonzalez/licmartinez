@@ -49,10 +49,11 @@ function App() {
                   <div className="infoSection2">
                     <h2>Licenciado Marco Antonio Martinez</h2>
                     <p>
-                      Soy <strong>Marco Martínez</strong>, abogado especializado
-                      en derecho civil con más de 10 años de experiencia. Me
-                      esfuerzo por brindar soluciones legales confiables, éticas
-                      y personalizadas a cada uno de mis clientes.
+                      Soy <strong>Marco Antonio Martínez</strong>, abogado
+                      especializado en derecho civil con más de 10 años de
+                      experiencia. Me esfuerzo por brindar soluciones legales
+                      confiables, éticas y personalizadas a cada uno de mis
+                      clientes.
                     </p>
 
                     <h3>Especialidades</h3>
@@ -98,10 +99,22 @@ function App() {
                     <div className="asesoriaS4">
                       <h2>Tipos de asesorías:</h2>
                       <ul>
-                        <li>Asesoría de divorcios</li>
-                        <li>Asesoría ante la procu</li>
-                        <li>Asesoría financiera/Forex</li>
-                        <li>Asesoría pa no casarte</li>
+                        <li>
+                          Asesoría legal en procesos de divorcio y separación
+                          conyugal
+                        </li>
+                        <li>
+                          Asesoría y representación legal ante la Fiscalía
+                          General de la República
+                        </li>
+                        <li>
+                          Asesoría legal en temas financieros, patrimoniales y
+                          contratos de inversión
+                        </li>
+                        <li>
+                          Asesoría legal preventiva en derecho de familia y
+                          planificación matrimonial
+                        </li>
                       </ul>
                     </div>
                   )}
@@ -109,10 +122,18 @@ function App() {
                     <div className="notarialS4">
                       <h2>Servicios notariales como:</h2>
                       <ul>
-                        <li>Escrituras públicas</li>
-                        <li>Poderes notariales</li>
-                        <li>Testamentos</li>
-                        <li>Contratos certificados</li>
+                        <li>
+                          Elaboración y autorización de escrituras públicas
+                        </li>
+                        <li>
+                          Redacción y otorgamiento de poderes notariales
+                          nacionales e internacionales
+                        </li>
+                        <li>Elaboración y protocolización de testamentos</li>
+                        <li>
+                          Certificación y autenticación de contratos y
+                          documentos legales
+                        </li>
                       </ul>
                     </div>
                   )}

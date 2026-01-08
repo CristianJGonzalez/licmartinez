@@ -26,6 +26,7 @@
   flex-direction: column;
   max-width: 500px;
   gap: 2rem;
+  padding: 2rem;
 }
 
 /* Tablt reponsiveness */
