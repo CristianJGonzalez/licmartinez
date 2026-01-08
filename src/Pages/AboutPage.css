@@ -1,29 +1,61 @@
 .about-page h1 {
-  display: block;
   font-size: 3rem;
   text-align: center;
   color: #91191e;
+  margin-bottom: 3rem;
+}
+
+.about-page p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: #0f172a;
 }
 
 .about-page-main-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   gap: 3rem;
   width: 100%;
-  height: auto;
   margin-bottom: 4rem;
+  padding: 0 2rem;
 }
 
-.flex-container-1 {
+.flex-container-1,
+.flex-container-2 {
   display: flex;
   flex-direction: column;
   max-width: 500px;
   gap: 2rem;
 }
 
-.flex-container-2 {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
+/* Tablt reponsiveness */
+@media (max-width: 768px) {
+  .about-page-main-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .flex-container-1,
+  .flex-container-2 {
+    max-width: 100%;
+  }
+
+  .about-page h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* small phones */
+
+@media (max-width: 480px) {
+  .about-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-page-main-container {
+    padding: 0 1rem;
+    gap: 2rem;
+  }
 }

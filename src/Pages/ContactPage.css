@@ -1,3 +1,5 @@
+/* SECTION 1 Contact page */
+
 .contact-page-section1 {
   position: relative;
   width: 100%;
@@ -40,28 +42,92 @@
   line-height: 1.6;
 }
 
+/* SECTION 2 Contact page */
 .contact-page-section2 {
-  background-color: #91191e;
   width: 100%;
-  height: 100vh;
+  min-height: 80vh;
+  background-color: #91191e;
+  padding: 5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  overflow: hidden;
+  gap: 6rem;
 }
 
-/*  Mobile responsiveness*/
+.contact-page-section2 .content1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #f1f5f9;
+}
+
+.contact-page-section2 img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.contact-page-section2 .credits {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: #f1f5f9;
+}
+
+.content2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #f1f5f9;
+}
+
+.content2 svg {
+  height: 25px;
+  width: 25px;
+}
+
+.content2 .office-location {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* SECTION 2: tablets responsiveness */
 
 @media (max-width: 768px) {
-  .contact-page-section1 {
-    margin-top: 4rem;
+  .contact-page-section2 {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    gap: 3rem;
+    min-height: auto;
   }
 
+  .contact-page-section2 img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .content2 {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
+
+/* SECTION 1 & 2: small phones responsiveness */
+
+@media (max-width: 480px) {
   .contact-page-section1 h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .contact-page-section1 p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .contact-page-section2 {
+    padding: 2rem 1rem;
   }
 }

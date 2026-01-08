@@ -31,7 +31,7 @@ function AboutPage() {
           </p>
         </div>
         <div className="flex-container-2">
-          <img src="/images/about-image.jpg" alt="about-page" />
+          <img src="/images/licMartinez.png" alt="about-page" />
         </div>
       </div>
     </div>

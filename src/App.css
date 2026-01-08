@@ -200,7 +200,7 @@
   padding: 4rem 2rem;
   background-color: #f1f5f9;
   gap: 2rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Merriweather", serif;
 }
 
 .map-container {
@@ -230,7 +230,7 @@
 .contact-info h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
-  color: #3b82f6;
+  color: #c6a15b;
 }
 
 .contact-info ul {
