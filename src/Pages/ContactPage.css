@@ -49,7 +49,7 @@
   background-color: #91191e;
   padding: 5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   gap: 6rem;
 }
